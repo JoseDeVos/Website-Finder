@@ -1,0 +1,332 @@
+/* Apply a background image or color for the entire page */
+*{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: rgba(0, 0, 0, 0.5) url('https://images.unsplash.com/photo-1511690656952-34342bb7c2f2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=00');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+
+.header{
+    position: relative;
+    z-index: 5;
+}
+
+
+/* Style the header with a food-themed image or color */
+header {
+    background-color: #FFD700; /* Fallback background color */
+    text-align: center;
+    padding: 30px;
+    color: #fff;
+    font-size: 2rem;
+    border-radius: 10px 10px 0 0;
+    text-transform: uppercase;
+}
+
+/* Style the navigation bar */
+nav{
+    background-color: #fff;
+    color: black;
+    padding: 10px 0;
+    border-radius: 0 0 10px 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+    font-size: 1.2rem
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #FFD700;
+}
+
+
+
+/* Style the main content */
+main {
+    background-color: rgba(255, 255, 255, 0.9); /* Add a semi-transparent white background */
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the search box */
+.search {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+#ingredientInput {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+#searchButton {
+    background-color: #FFD700;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+#searchButton:hover {
+    background-color: #FFC100;
+}
+
+/* Style the recipe results */
+.results {
+    padding: 5px;
+}
+
+.recipe {
+    background-color: #fff;
+    padding: 15px;
+    margin: 15px auto;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.recipe h2 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.recipe p {
+    font-size: 1rem;
+}
+
+#about{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    height: 800px auto;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #000;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+#about .title-recipe{
+    background-color: #FFD700;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: .7rem;
+    text-transform: uppercase;
+}
+
+#about .title{
+    padding-top: 5px;
+    text-align: center;
+}
+
+#about .description-about{
+    padding-top: 5px;
+    text-align: center;
+    width: auto;
+}
+
+#about .description-about p{
+    font-weight: normal;
+}
+
+#about .key-features{
+    padding-top: 5px;
+    text-align: center;
+    width: auto;
+}
+
+#about .why-choose-us{
+    padding-top: 5px;
+    text-align: center;
+    width: auto;
+}
+
+#about p{
+    text-align: center;
+    font-weight: bold;
+}
+
+#contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+}
+
+#contact .content{
+    max-width: 800px;
+    text-align: center;
+}
+
+#contact .content h2{
+    font-size: 36px;
+    font-weight: 500;
+    color: #FFD700;
+}
+
+
+.container{
+    width: 100%;
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.container .contactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .contactInfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.container .contactInfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+.container .contactInfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: white;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.container .contactInfo .box .text h3{
+    font-weight: 500;
+    color: #FFD700;
+}
+
+.contactForm{
+    width: 40%;
+    padding: 40px;
+    background: white;
+    border-radius: 10px;
+}
+
+.contactForm h2{
+    font-size: 30px;
+    color: #FFD700;
+    font-weight: 500;
+}
+
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #FFD700;
+    outline: none;
+    resize: none;
+}
+
+.contactForm .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: .5s;
+    color: #666;
+}
+
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span{
+    color: #FFD700;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.contactForm .inputBox input[type="submit"]{
+    width: 100px;
+    background: #FFD700;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+@media (max-width: 991px){
+    .contact{
+        padding: 50px;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .container .contactInfo{
+        margin-bottom: 40px;
+    }
+    .container .contactInfo,
+    .contactForm{
+        width: 100%;
+    }
+}
